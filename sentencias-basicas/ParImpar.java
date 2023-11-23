@@ -4,7 +4,7 @@ import java.util.Scanner;
  * Dado un número entero y positivo que se introduce por teclado,
  * determinar si es "Par" o "Impar" 
  */
-public class ParOImpar {
+public class ParImpar {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 

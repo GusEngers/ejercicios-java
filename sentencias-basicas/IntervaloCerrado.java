@@ -12,9 +12,9 @@ public class IntervaloCerrado {
 		int numero = scanner.nextInt();
 
 		if (numero >= 51 && numero <= 100) {
-			System.out.println("El número " + numero + " ingresado se encuentra dentro del intervalo cerrado [51; 100]");
+			System.out.println("El número " + numero + " ingresado se encuentra en el intervalo cerrado [51; 100]");
 		} else {
-			System.out.println("El número " + numero + " ingresado no se encuentra dentro del intervalo cerrado [51; 100]");
+			System.out.println("El número " + numero + " ingresado no se encuentra en el intervalo cerrado [51; 100]");
 		}
 	}
 }
