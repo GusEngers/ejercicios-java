@@ -16,5 +16,7 @@ public class IntervaloCerrado {
 		} else {
 			System.out.println("El número " + numero + " ingresado no se encuentra en el intervalo cerrado [51; 100]");
 		}
+
+		scanner.close();
 	}
 }

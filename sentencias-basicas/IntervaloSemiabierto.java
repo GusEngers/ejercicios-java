@@ -17,5 +17,7 @@ public class IntervaloSemiabierto {
 		} else {
 			System.out.println("El número " + numero + " ingresado no se encuentra en el intervalo semiabierto por la izquierda (51; 100]");
 		}
+
+		scanner.close();
 	}
 }

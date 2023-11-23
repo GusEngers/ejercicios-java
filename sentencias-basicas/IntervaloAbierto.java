@@ -16,5 +16,7 @@ public class IntervaloAbierto {
 		} else {
 			System.out.println("El número " + numero + " ingresado no se encuentra en el intervalo abierto (51; 100)");
 		}
+
+		scanner.close();
 	}
 }

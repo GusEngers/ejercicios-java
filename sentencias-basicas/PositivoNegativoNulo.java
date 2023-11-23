@@ -18,5 +18,7 @@ public class PositivoNegativoNulo {
 		} else {
 			System.out.println("El número " + numero + " ingresado es NULO");
 		}
+
+		scanner.close();
 	}
 }
