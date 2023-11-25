@@ -12,7 +12,10 @@ public class Number {
   	// number.compareNumbers();
 
   	// Ejercicio 2:
-  	number.isPositiveOrNegative();
+  	// number.isPositiveOrNegative();
+
+  	// Ejercicio 3:
+  	number.isMultiple();
   }
 
   /**
@@ -49,6 +52,25 @@ public class Number {
   		System.out.print("The number is NEGATIVE");
   	} else {
   		System.out.print("The number is ZERO");
+  	}
+  }
+
+  /**
+   * Ejercicio 3: Desarrollar un programa para
+   * determinar si dos números ingresados por el
+   * usuario son múltiplos.
+   */
+  public void isMultiple() {
+  	System.out.print("Enter the first number: ");
+  	this.number1 = this.scanner.nextDouble();
+
+  	System.out.print("Enter the second number: ");
+  	this.number2 = this.scanner.nextDouble();
+
+  	if (this.number1 % this.number2 == 0) {
+  		System.out.print("The number " + this.number1 + " is a multiple for the number " + this.number2);
+  	} else {
+  		System.out.print("The number " + this.number1 + " isn't a multiple for the number " + this.number2);
   	}
   }
 }
