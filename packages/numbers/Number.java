@@ -21,7 +21,10 @@ public class Number {
   	// number.isGreaterThan();
 
   	// Ejercicio 5:
-  	number.howManyDigits();
+  	// number.howManyDigits();
+
+    // Ejercicio 6:
+    number.seeBackwards();
   }
 
   /**
@@ -103,7 +106,7 @@ public class Number {
 
   /**
    * Ejercicio 5: Desarrollar un programa para
-   * determinar cuátas cifras posee un número
+   * determinar cuántas cifras posee un número
    * ingresado por el usuario (1 - 9999).
    */
   public void howManyDigits() {
@@ -121,5 +124,29 @@ public class Number {
   	} else {
   		System.out.print("The number has 4 digits");
   	}
+  }
+
+  /**
+   * Ejercicio 6: Desarrollar un programa que
+   * recibe un número entre 1 y 9999 ingresado
+   * por el ususario y luego muestra el número
+   * dado vuelta
+   */
+  public void seeBackwards() {
+    System.out.print("Enter a number between 1 and 9999: ");
+    this.number1 = this.scanner.nextInt();
+
+    if (this.number1 > 9999 || this.number1 <= 0) {
+      System.out.print("The number is invalid");
+    }
+
+    String value = String.valueOf(this.number1);
+    String aux = "";
+
+    for (int i = value.length() - 1; i >= 0; i--) {
+      aux += value.charAt(i);
+    }
+
+    System.out.print(value + " is " + aux);
   }
 }
