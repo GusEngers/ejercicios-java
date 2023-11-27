@@ -27,7 +27,10 @@ public class Number {
     // number.seeBackwards();
 
     // Ejercicio 7:
-    number.isPalindromic();
+    // number.isPalindromic();
+
+    // Ejercicio 8:
+    number.thatNote();
   }
 
   /**
@@ -179,6 +182,40 @@ public class Number {
         System.out.println("The number " + value + " isn't palindromic");
       }
     }
+  }
 
+  /**
+   * Ejercicio 8: Desarrollar un programa que
+   * obtenga una nota del 1 al 10 del usuario
+   * y muestre si es INSUFICIENTE, REGULAR,
+   * BIEN o EXCELENTE 
+   */
+  public void thatNote() {
+    System.out.print("Enter a note between 1 and 10: ");
+    this.number1 = this.scanner.nextInt();
+
+    switch (this.number1) {
+      case 1:
+      case 2:
+      case 3:
+      case 4:
+      case 5:
+        System.out.print("UNSATISFACTORY");
+        break;
+      case 6:
+        System.out.print("REGULAR");
+        break;
+      case 7:
+      case 8:
+      case 9:
+        System.out.print("GOOD");
+        break;
+      case 10:
+        System.out.print("EXCELLENT");
+        break;
+      default:
+        System.out.print("Invalid note");
+        break;
+    }
   }
 }
