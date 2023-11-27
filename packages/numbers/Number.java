@@ -24,7 +24,10 @@ public class Number {
   	// number.howManyDigits();
 
     // Ejercicio 6:
-    number.seeBackwards();
+    // number.seeBackwards();
+
+    // Ejercicio 7:
+    number.isPalindromic();
   }
 
   /**
@@ -130,7 +133,7 @@ public class Number {
    * Ejercicio 6: Desarrollar un programa que
    * recibe un número entre 1 y 9999 ingresado
    * por el ususario y luego muestra el número
-   * dado vuelta
+   * dado vuelta.
    */
   public void seeBackwards() {
     System.out.print("Enter a number between 1 and 9999: ");
@@ -138,15 +141,44 @@ public class Number {
 
     if (this.number1 > 9999 || this.number1 <= 0) {
       System.out.print("The number is invalid");
+    } else {
+      String value = String.valueOf(this.number1);
+      String aux = "";
+
+      for (int i = value.length() - 1; i >= 0; i--) {
+        aux += value.charAt(i);
+      }
+
+      System.out.print(value + " is " + aux);
     }
 
-    String value = String.valueOf(this.number1);
-    String aux = "";
+  }
 
-    for (int i = value.length() - 1; i >= 0; i--) {
-      aux += value.charAt(i);
+  /**
+   * Ejercicio 7: Desarrollar un programa que
+   * verifique si un número ingresado por el
+   * usuario es capicua.
+   */
+  public void isPalindromic() {
+    System.out.print("Enter a number greater than 0: ");
+    this.number1 = this.scanner.nextInt();
+
+    if (this.number1 <= 0) {
+      System.out.print("The number is invalid");
+    } else {
+      String value = String.valueOf(this.number1);
+      String aux = "";
+
+      for (int i = value.length() - 1; i >= 0; i--) {
+        aux += value.charAt(i);
+      }
+
+      if (value.equals(aux)) {
+        System.out.print("The number " + value + " is palindromic");
+      } else {
+        System.out.println("The number " + value + " isn't palindromic");
+      }
     }
 
-    System.out.print(value + " is " + aux);
   }
 }
