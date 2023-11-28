@@ -9,25 +9,25 @@ public class Number {
   	Number number = new Number();
 
   	// Ejercicio 1:
-  	// number.compareNumbers();
+  	number.compareNumbers();
 
   	// Ejercicio 2:
-  	// number.isPositiveOrNegative();
+  	number.isPositiveOrNegative();
 
   	// Ejercicio 3:
-  	// number.isMultiple();
+  	number.isMultiple();
 
   	// Ejercicio 4:
-  	// number.isGreaterThan();
+  	number.isGreaterThan();
 
   	// Ejercicio 5:
-  	// number.howManyDigits();
+  	number.howManyDigits();
 
     // Ejercicio 6:
-    // number.seeBackwards();
+    number.seeBackwards();
 
     // Ejercicio 7:
-    // number.isPalindromic();
+    number.isPalindromic();
 
     // Ejercicio 8:
     number.thatNote();
@@ -39,6 +39,7 @@ public class Number {
    * usuario son iguales. 
    */
   public void compareNumbers() {
+    System.out.println("-- Exercise 1 --");
   	System.out.print("Enter the first number: ");
   	this.number1 = this.scanner.nextInt();
 
@@ -58,6 +59,7 @@ public class Number {
    * usuario es positivo o negativo.
    */
   public void isPositiveOrNegative() {
+    System.out.println("\n-- Exercise 2 --");
   	System.out.print("Enter a number: ");
   	this.number1 = this.scanner.nextInt();
 
@@ -76,6 +78,7 @@ public class Number {
    * usuario son múltiplos.
    */
   public void isMultiple() {
+    System.out.println("\n-- Exercise 3 --");
   	System.out.print("Enter the first number: ");
   	this.number1 = this.scanner.nextInt();
 
@@ -95,6 +98,7 @@ public class Number {
    * por el usuario es mayor.
    */
   public void isGreaterThan() {
+    System.out.println("\n-- Exercise 4 --");
   	System.out.print("Enter the first number: ");
   	this.number1 = this.scanner.nextInt();
 
@@ -116,6 +120,7 @@ public class Number {
    * ingresado por el usuario (1 - 9999).
    */
   public void howManyDigits() {
+    System.out.println("\n-- Exercise 5 --");
   	System.out.print("Enter a number between 1 and 9999: ");
   	this.number1 = this.scanner.nextInt();
 
@@ -139,6 +144,7 @@ public class Number {
    * dado vuelta.
    */
   public void seeBackwards() {
+    System.out.println("\n-- Exercise 6 --");
     System.out.print("Enter a number between 1 and 9999: ");
     this.number1 = this.scanner.nextInt();
 
@@ -163,6 +169,7 @@ public class Number {
    * usuario es capicua.
    */
   public void isPalindromic() {
+    System.out.println("\n-- Exercise 7 --");
     System.out.print("Enter a number greater than 0: ");
     this.number1 = this.scanner.nextInt();
 
@@ -191,6 +198,7 @@ public class Number {
    * BIEN o EXCELENTE 
    */
   public void thatNote() {
+    System.out.println("\n-- Exercise 8 --");
     System.out.print("Enter a note between 1 and 10: ");
     this.number1 = this.scanner.nextInt();
 
